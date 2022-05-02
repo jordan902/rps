@@ -12,7 +12,7 @@
  }
  
  function playerChoice() {
-
+     let input = prompt("Rock Paper or Scissors?");
  }
 
  function computerChoice(){
