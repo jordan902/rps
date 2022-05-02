@@ -12,7 +12,9 @@
  }
  
  function playerChoice() {
-     let input = prompt("Rock Paper or Scissors?");
+     let input = prompt("Rock Paper or Scissors?"); 
+     input = input.toLocaleLowerCase();
+     console.log(input)
  }
 
  function computerChoice(){
