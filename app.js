@@ -10,12 +10,14 @@
  }
 
 
- function playerRound() {
+ function playerRound(round) {
    const playerSelection = playerChoice();
    const computerSelection = computerChoice();
    const winner = checkWinner(playerSelection, computerSelection);
    winners.push(winner);
- }
+   logRound(playerSelection, computerSelection, winner, round);
+}
+
  
  function playerChoice() {
     let input = prompt("Rock Paper or Scissors?"); 
