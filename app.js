@@ -2,6 +2,7 @@
 
 
  function game() {
+     playerRound();
 
  }
 
@@ -12,11 +13,16 @@
  }
  
  function playerChoice() {
-     let input = prompt("Rock Paper or Scissors?"); 
-     input = input.toLocaleLowerCase();
-     console.log(input)
- }
+    let input = prompt("Rock Paper or Scissors?"); 
+    while (input == null) {
+    input = prompt('Type Rock Paper or Scissors');
+} 
+ input = input.toLowerCase();
+ console.log(input);
+}
 
  function computerChoice(){
      return choices [Math.floor(Math.random()*choices.length)]
- } 
+} 
+
+ game();
