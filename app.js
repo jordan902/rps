@@ -42,8 +42,8 @@ function validateInput(choice) {
             return 'Tied';
         } else if (
         (choiceP === 'rock' && choiceC == 'scissors') ||
-        (choiceP === 'rock' && choiceC == 'scissors') ||
-        (choiceP === 'rock' && choiceC == 'scissors')
+        (choiceP === 'paper' && choiceC == 'rock') ||
+        (choiceP === 'scissors' && choiceC == 'paper')
         ){
             return "Player";
          } else  {
