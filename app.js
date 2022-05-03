@@ -10,6 +10,8 @@
  function playerRound() {
    const playerSelection = playerChoice();
    const computerSelection = computerChoice();
+   const winner = checkWinner(playerSelection, computerSelection)
+   console.log(winner);
  }
  
  function playerChoice() {
@@ -27,7 +29,7 @@
     input = input.toLocaleLowerCase();
     check = validateInput(input);  
  }
- console.log(input);
+ return input;
 }
 
  function computerChoice(){
