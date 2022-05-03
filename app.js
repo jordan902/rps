@@ -39,7 +39,7 @@ function validateInput(choice) {
 
     function checkWinner (choiceP, choiceC){
         if (choiceP === choiceC) {
-            return 'Tire';
+            return 'Tied';
         } else if (
         (choiceP === 'rock' && choiceC == 'scissors') ||
         (choiceP === 'rock' && choiceC == 'scissors') ||
