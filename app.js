@@ -2,7 +2,7 @@
  const winners = []; 
 
  function game() {
-    for(let i = 0; i <= 5;  i++) {
+    for(let i = 1; i <= 5;  i++) {
         playerRound(i);
     }
     logWins();
@@ -72,4 +72,7 @@ function computerChoice() {
     console.log("Player Chose:", playerChoice);
     console.log("Computer Chose:", computerChoice);
     console.log(winner, "Won the Round");
-    console.log("------------------
+    console.log("------------------");
+  }
+
+  game();
