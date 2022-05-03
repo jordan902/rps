@@ -37,4 +37,17 @@
 function validateInput(choice) {
     return choices.includes(choice) }
 
+    function checkWinner (choiceP, choiceC){
+        if (choiceP === choiceC) {
+            return 'Tire';
+        } else if (
+        (choiceP === 'rock' && choiceC == 'scissors') ||
+        (choiceP === 'rock' && choiceC == 'scissors') ||
+        (choiceP === 'rock' && choiceC == 'scissors')
+        ){
+            return "Player";
+         } else  {
+            return "Computer" 
+         }
+    } 
  game();
