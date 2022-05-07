@@ -8,7 +8,11 @@
  function startGame(){
    let imgs = document.querySelectorAll('img')
    imgs.forEach((img) =>
-   img.addEventListener(('click'), () => {}))
+   img.addEventListener(('click'), () => {
+     if(img.id){
+       playerRound.(img.id);
+     }
+   }))
  }
 
 
