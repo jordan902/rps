@@ -1,12 +1,17 @@
  const choices = [ 'rock', 'paper', 'scissors' ];
  const winners = []; 
 
- function game() {
+ function resetGame(){
 
-        playerRound();
-    logWins();
+ }
 
- } 
+ function startGame(){
+   let imgs = document.querySelectorAll('img')
+   imgs.forEach((img) =>
+   img.addEventListener(('click'), () => {}))
+ }
+
+
 
 
  function playerRound(round) {
@@ -44,4 +49,4 @@ function computerChoice() {
     let ties = winners.filter((item) => item == "Tie").length;
 
   }
-  game();
+  startGame();
