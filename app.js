@@ -18,17 +18,20 @@
 
 
 
- function playerRound(playerChoice) {
+ function playerRound(playerSelection) {
    let wins = checkWins();
    if (wins >=5) {
         return 
    }      
    const computerSelection = computerChoice();
    const winner = checkWinner(playerSelection, computerSelection);
-   winners.push(winner);
-
+   winners.push(winner);]
+   countWins();
+   displayRound(playerSelection, computerSelection, winner)
 }
 
+function displayRound(playerSelection, computerSelection)
+document.querySelector('.playerSelection').textContent = `You Chose: $
 function countWins() {
   let playerWins = winners.filter((item) => item == "Player").length;
   let computerWins = winners.filter((item) => item == "Computer").length;
